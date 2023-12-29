@@ -1,0 +1,120 @@
+/* Css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+   
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', Courier, monospace;
+    /* border: 1px solid red; */
+   }
+   
+   body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   }
+   
+   img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+   }
+   
+   input, button, textarea, select {
+    font: inherit;
+   }
+   
+   p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+   }
+   
+/* Styling */
+
+
+body{
+    background: linear-gradient(#024aad, #c16ae3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffde59;
+    padding: 0px 20px;
+    border-radius: 12px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    padding: 20px;
+    display: grid;
+    max-width: 1600px;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    /* border: 1px solid red; */
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+}
+
+.main-container img{
+    height: 40vh;
+    aspect-ratio: initial;
+    border-radius: 12px;
+}
+
+.main-container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 40px;
+    /* border: 1px solid red; */
+    margin-bottom: 20vh;
+}
+
+.main-container p{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+/* Animation */
+
+.element-to-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
