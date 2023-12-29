@@ -18,7 +18,7 @@
 
     <main>
         <div class="main-container">
-            <div class="element-to-animate">
+            <div>
                 <img src="images/restaurant.png" alt="">
                 <p>Todo comenzó después de la cuarentena, cuando vimos que España se había convertido en un país cuya vibrante vida cultural y de ocio había sido profundamente afectada. </p>
             </div>
@@ -35,34 +35,21 @@
                 <p>Y nuestra visión es clara: revivir el espíritu del ocio en España. Y hacerlo a lo grande.</p>
             </div>
         </div>
+
+
+
+        <div class="call-to-action-container">
+            <div>
+                <p>!No te lo pierdas! Compra tu Funcard ya!</p>
+                <button>Quiero mi Funcard</button>
+            </div>
+            <div>
+                <p>Quieres saber mas o tienes dudas?</p>
+                <button>Contactanos</button>
+            </div>
+        </div>
     </main>
 
-    <script>
-        // Helper function to check if element is in viewport
-        function isInViewport(element) {
-          const rect = element.getBoundingClientRect();
-          return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
-        }
-        
-        // Function to run when scrolling occurs
-        function runOnScroll() {
-          // Get all elements you want to show on scroll
-          const elements = document.querySelectorAll('.main-container > div');
-          // Loop through each element to check if it's in the viewport
-          elements.forEach(el => {
-            if (isInViewport(el)) {
-              el.classList.add('is-visible');
-            }
-          });
-        }
-        
-        // Listen for scroll events
-        window.addEventListener('scroll', runOnScroll);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
