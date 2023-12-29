@@ -119,6 +119,7 @@ main{
     padding: 20px;
     border-radius: 12px;
     width: 100%;
+    gap: 2vw;
 }
 
 .call-to-action-container p{
