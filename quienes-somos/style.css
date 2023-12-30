@@ -59,6 +59,7 @@ header > div{
 
 h1{
     font-size: 3rem;
+    text-align: center;
 }
 
 
@@ -153,3 +154,56 @@ button{
     transform: translateY(0);
   }
   
+
+
+/* Responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        grid-template-rows: auto; /* Adjust grid rows for content */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .main-container > div {
+        width: 80%; /* Adjust width for small screens */
+        margin-bottom: 10vh; /* Reduce margin between elements */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .main-container img {
+        height: 30vh; /* Adjust image height for small screens */
+    }
+
+    .main-container p, .call-to-action-container p {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce the font size of the main title */
+    }
+
+    .call-to-action-container {
+        flex-direction: column; /* Stack call-to-action items */
+    }
+
+    .call-to-action-container > div {
+        flex-direction: column; /* Stack elements within call-to-action */
+        padding: 10px; /* Reduce padding */
+    }
+
+    button {
+        padding: 10px; /* Reduce button padding */
+        font-size: 1.2rem; /* Reduce font size */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .main-container > div {
+        width: 90%; /* Increase width for very small screens */
+    }
+
+    .call-to-action-container > div {
+        flex-direction: column; /* Ensure everything is stacked */
+    }
+}
