@@ -159,51 +159,51 @@ button{
 /* Responsiveness on smaller screens */
 @media (max-width: 768px) {
     .main-container {
-        grid-template-columns: 1fr; /* Stack the columns on small screens */
-        grid-template-rows: auto; /* Adjust grid rows for content */
-        padding: 10px; /* Reduce padding */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        padding: 10px; 
     }
 
     .main-container > div {
-        width: 80%; /* Adjust width for small screens */
-        margin-bottom: 10vh; /* Reduce margin between elements */
-        gap: 20px; /* Reduce gap */
+        width: 80%;
+        margin-bottom: 10vh;
+        gap: 20px; 
     }
 
     .main-container img {
-        height: 30vh; /* Adjust image height for small screens */
+        height: 30vh; 
     }
 
     .main-container p, .call-to-action-container p {
-        font-size: 1.2rem; /* Reduce font size */
+        font-size: 1.2rem; 
     }
 
     h1 {
-        font-size: 2rem; /* Reduce the font size of the main title */
+        font-size: 2rem; 
     }
 
     .call-to-action-container {
-        flex-direction: column; /* Stack call-to-action items */
+        flex-direction: column; 
     }
 
     .call-to-action-container > div {
-        flex-direction: column; /* Stack elements within call-to-action */
-        padding: 10px; /* Reduce padding */
+        flex-direction: column; 
+        padding: 10px; 
     }
 
     button {
-        padding: 10px; /* Reduce button padding */
-        font-size: 1.2rem; /* Reduce font size */
+        padding: 10px;
+        font-size: 1.2rem; 
     }
 }
 
-/* Further adjustments for very small screens */
+
 @media (max-width: 480px) {
     .main-container > div {
-        width: 90%; /* Increase width for very small screens */
+        width: 90%; 
     }
 
     .call-to-action-container > div {
-        flex-direction: column; /* Ensure everything is stacked */
+        flex-direction: column; 
     }
 }
