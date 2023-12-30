@@ -88,7 +88,7 @@ li {
 input, textarea{
     flex: 1 1 100%;
     padding: 4px;
-    font-size: 0.9rem ;
+    font-size: 1.1rem ;
     background-color: #f3f0fd;
     color: #333;
     border: 1px solid #a3b8d3;
@@ -105,8 +105,30 @@ input:focus, textarea:focus{
     color: #888;
 }
 
+input:invalid{
+    border: 1px solid red;
+}
+
+input:invalid + span::before{
+    color: red;
+    content: "Invalid field";
+    font-size: 0.8rem;
+}
+span{
+  margin-top: -20px;
+}
+
+
+input:placeholder-shown{
+    border:0.5px inset rgb(25, 173, 231)
+}
+input:placeholder-shown + span::before{
+    content: "";
+}
+
 div{
     font-size: 1.5rem;
+    text-align: center;
 }
 
 label{
@@ -118,4 +140,36 @@ button{
     padding: 10px;
     border-radius: 12px;
     font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    .nombre, .apellidos, .correo, .mensaje {
+        grid-column: auto;
+    }
+
+    input, textarea, button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 4vh 4vw;
+    }
+
+    form {
+        gap: 3vh;
+    }
+
+    button {
+        padding: 12px;
+    }
 }
