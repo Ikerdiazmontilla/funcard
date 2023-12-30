@@ -1,14 +1,16 @@
-
-function isInViewport(element) {
+// Helper function to check if a certain percentage of the element is in viewport
+function isInViewport(element, percentageVisible = 0.4) {
     const rect = element.getBoundingClientRect();
+    const elementHeight = rect.height;
+    const elementVisibleHeight = elementHeight * percentageVisible;
+  
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.top + elementVisibleHeight < (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom - elementVisibleHeight > 0
     );
   }
-
+  
+  
 
   function runOnScroll() {
     const elements = document.querySelectorAll('.element-to-animate');
@@ -20,3 +22,6 @@ function isInViewport(element) {
   }
  
   window.addEventListener('scroll', runOnScroll);
+
+
+  
