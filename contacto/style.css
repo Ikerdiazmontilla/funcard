@@ -1,0 +1,121 @@
+/* Css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+   
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', Courier, monospace;
+    /* border: 1px solid red; */
+   }
+   
+   body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   }
+   
+   img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+   }
+   
+   input, button, textarea, select {
+    font: inherit;
+    outline: none;
+   }
+   
+   p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+   }
+   
+   fieldset{
+    border: none;
+   }
+   ul{
+    list-style: none;
+   }
+
+   /* Styling */
+
+
+body{
+    background: linear-gradient(#024aad, #c16ae3);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5vh 5vw;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+}
+
+.nombre,
+.apellidos {
+    grid-column: span 1;
+}
+
+.correo,
+.mensaje {
+    grid-column: 1 / -1; 
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+input, textarea{
+    flex: 1 1 100%;
+    padding: 4px;
+    font-size: 0.9rem ;
+    background-color: #f3f0fd;
+    color: #333;
+    border: 1px solid #a3b8d3;
+    border-radius: 12px;  
+}
+input:focus, textarea:focus{
+    outline: none;
+    background-color: #e0e0ff;
+    border: 2px solid #5555ff; 
+    box-shadow: 0 0 5px #0275d8;
+}
+
+::placeholder {
+    color: #888;
+}
+
+div{
+    font-size: 1.5rem;
+}
+
+label{
+    font-size: 1.3rem;
+}
+
+button{
+    background-color: #ffde59;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}

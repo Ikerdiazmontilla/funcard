@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="content">
+        <form>
+            <fieldset class="upper-content">
+                <h1>Contactanos</h1>
+                <div>
+                    Tienes alguna duda o quieres contactarnos? Dejanos un email y respondemos cuanto antes
+                </div>
+            </fieldset>
+            <fieldset class="form-field">
+                <ul>
+                    <li class="nombre">
+                        <label for="f-name">Nombre*</label>
+                        <input type="text" name="fName" id="f-name" placeholder="Elon" required><span></span>
+                    </li>
+                    <li class="apellidos">
+                        <label for="s-name">Apellidos*</label>
+                        <input type="text" name="sName" id="s-name"  placeholder="Musk" required><span></span>
+                    </li>
+                    <li class="correo">
+                        <label for="email">Correo*</label>
+                        <input type="email" name="email" id="email" placeholder="bruh@email.com" required><span></span>
+                    </li>
+                    <li class="mensaje">
+                        <label for="content">Mensaje*</label>
+                        <textarea type="" name="content" id="content" placeholder="Escribe aqui" required></textarea><span></span>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <button type="reset">
+                    Enviar
+                </button>
+                <div>
+                    Al pulsar el boton enviar permites que te enviemos correos como respuesta
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

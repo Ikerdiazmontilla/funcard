@@ -1,0 +1,5 @@
+Colors:
+Blue: #024aad
+Purple: #c16ae3
+Yellow: #ffde59
+Input fields:
