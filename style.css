@@ -1,0 +1,101 @@
+/* Css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+   
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', Courier, monospace;
+    /* border: 1px solid red; */
+   }
+   
+   body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   }
+   
+   img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+   }
+   
+   input, button, textarea, select {
+    font: inherit;
+   }
+   
+   p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+   }
+   
+   body{
+    background: linear-gradient(#024aad, #c16ae3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+    gap: 10vh;
+    color: white;
+}
+
+main p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.eslogan{
+    font-size: 2rem;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 5vw;
+}
+
+.wrapper p{
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+img{
+    height: 40vh;
+    aspect-ratio: initial;
+    border-radius: 12px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    
+}
+
+button{
+    background-color: #ffde59;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 1.5rem;
+}
